@@ -3,6 +3,7 @@ package trabalhoga.ecommerce.application.domain;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Data
@@ -13,6 +14,5 @@ public class Customer {
     private String name;
     private String email;
     private String password;
-    private Address address;
 
 }

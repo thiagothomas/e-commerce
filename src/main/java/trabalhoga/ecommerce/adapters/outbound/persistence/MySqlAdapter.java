@@ -10,26 +10,22 @@ import trabalhoga.ecommerce.application.ports.*;
 @Component
 @Primary
 public class MySqlAdapter implements
-        AddressRepositoryPort,
         CategoryRepositoryPort,
         CustomerRepositoryPort,
         OrderRepositoryPort,
         ProductRepositoryPort
 {
 
-    private final SpringDataMySqlAddressRepository addressRepository;
     private final SpringDataMySqlCategoryRepository categoryRepository;
     private final SpringDataMySqlCustomerRepository customerRepository;
     private final SpringDataMySqlOrderRepository orderRepository;
     private final SpringDataMySqlProductRepository productRepository;
 
-    public MySqlAdapter(final SpringDataMySqlAddressRepository addressRepository,
-                        final SpringDataMySqlCategoryRepository categoryRepository,
+    public MySqlAdapter(final SpringDataMySqlCategoryRepository categoryRepository,
                         final SpringDataMySqlCustomerRepository customerRepository,
                         final SpringDataMySqlOrderRepository orderRepository,
                         final SpringDataMySqlProductRepository productRepository)
     {
-        this.addressRepository = addressRepository;
         this.categoryRepository = categoryRepository;
         this.customerRepository = customerRepository;
         this.orderRepository = orderRepository;

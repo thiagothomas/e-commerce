@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface CategoryRepositoryPort {
+public interface CategoryServicePort
+{
 
     List<Category> findAll();
     Optional<Category> findById(UUID categoryId);

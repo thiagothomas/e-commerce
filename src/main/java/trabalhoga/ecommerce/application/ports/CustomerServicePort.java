@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface CustomerRepositoryPort {
+public interface CustomerServicePort
+{
 
     List<Customer> findAll();
     Optional<Customer> findById(UUID customerId);

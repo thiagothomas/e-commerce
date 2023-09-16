@@ -1,13 +1,14 @@
 package trabalhoga.ecommerce.application.domain;
 
-import lombok.Builder;
-import lombok.Data;
-
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import java.util.Set;
 import java.util.UUID;
 
-@Data
-@Builder
+@NoArgsConstructor
+@Getter
+@Setter
 public class Product {
 
     private UUID id;

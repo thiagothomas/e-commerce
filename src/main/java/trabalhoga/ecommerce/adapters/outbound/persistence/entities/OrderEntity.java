@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Data
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 public class OrderEntity {
 
     @Id
@@ -20,7 +20,8 @@ public class OrderEntity {
     @JoinColumn(name = "customer_id")
     private CustomerEntity customer;
 
-    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToOne(cascade =  CascadeType.ALL)
+    @JoinColumn(name = "payment_id", referencedColumnName = "id")
     private PaymentEntity payment;
 
     @ManyToMany

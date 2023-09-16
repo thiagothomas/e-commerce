@@ -2,6 +2,7 @@ package trabalhoga.ecommerce.adapters.outbound.persistence.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import trabalhoga.ecommerce.application.domain.enums.PaymentStatus;
 
 import java.util.UUID;
 
@@ -14,11 +15,6 @@ public class PaymentEntity {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID id;
 
-    private Integer status;
-
-    @OneToOne
-    @MapsId
-    private OrderEntity order;
-
+    private PaymentStatus status;
 
 }

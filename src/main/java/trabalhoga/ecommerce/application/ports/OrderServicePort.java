@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface OrderRepositoryPort {
+public interface OrderServicePort
+{
 
     List<Order> findAll();
     Optional<Order> findById(UUID orderId);

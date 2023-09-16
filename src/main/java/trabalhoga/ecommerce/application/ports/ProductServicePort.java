@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface ProductRepositoryPort {
+public interface ProductServicePort
+{
 
     List<Product> findAll();
     Optional<Product> findById(UUID productId);

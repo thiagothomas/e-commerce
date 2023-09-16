@@ -1,1 +1,3 @@
-# simple-e-commerce-project with Hexagonal Architecture
+# Simple E-commerce project example with Hexagonal Architecture
+
+Project for the discipline of Database Management Systems
